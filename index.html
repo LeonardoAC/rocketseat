@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>RocketSeat tarefinha</title>
 </head>
 <body>
-    <div id="main">
-        <div id="">
-
+    <div id="main" class="divMain">
+        <div id="box" class="divBox">
+            <ul>
+                <li><!--Avatar-->
+                    <img src="assets/avatar-light.png" alt="foto" id="imgAvatar" class="roundedBorderPicture">
+                    @idonthaveinsta
+                </li>
+                <li><!--Botao slider-->
+                    <input type="range" min="1" max="2" value="1" id="btnSlider1" class="slider">
+                </li>
+                <li>
+                    <ul><!--Links-->
+                        <li><a href="#">Inscreva-se no NLW</a></li>
+                        <li><a href="#">Baixe meu e-book</a></li>
+                        <li><a href="#">Veja meu portfolio</a></li>
+                        <li><a href="#">Conheça o explorer</a></li>
+                    </ul>
+                </li>
+                <li><!--Icones-->
+                    icones
+                </li>
+                <li>Feito com s2 pela Rocketseat </li>
+            </ul>
         </div> <!-- fim caixa-->
     </div><!-- fim main-->
+    <script>
+       window.addEventListener('load', getTimeAndSetTheBackground); /* altera fundo pelo horario */
+       document.addEventListener('click', ChangeBackground); /* altera fundo pelo clique no slider */
+    </script>
 </body>
 </html>

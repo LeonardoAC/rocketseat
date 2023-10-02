@@ -4,3 +4,48 @@
     padding: 0;
     /*box-sizing: border-box*/
 }
+
+:root{
+    /* variáveis */
+    --fundoDia: url(assets/bg-desktop-light.jpg);
+    --fundoNoite: url(assets/bg-desktop.jpg);
+    --corDaBorda: grey;
+}
+
+body{
+    background-image: var(--fundoDia);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divmain{
+    /* div principal da janela */
+}
+
+.divBox{
+    /* div define a caixa central onde ficam os elementos principais */
+    border: 1px solid var(--corDaBorda);
+    width: 33%;
+
+}
+
+.roundedBorderPicture{
+    /* Cria moldura arredondada em torno das imagens */
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.slider{
+    /* define a aparencia do botao slider */
+    appearance: none;
+    border: 1px solid var(--corDaBorda);
+    width: 100px;
+    height: 25px;
+    --webkit-height: 25px;
+}
+
+#imgAvatar{
+    /* define o tamanho do avatar */
+    width: 250px;
+}
+
