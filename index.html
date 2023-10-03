@@ -10,32 +10,40 @@
 <body>
     <div id="main" class="divMain">
         <div id="box" class="divBox">
-            <ul>
-                <li><!--Avatar-->
-                    <img src="assets/avatar-light.png" alt="foto" id="imgAvatar" class="roundedBorderPicture">
-                    @idonthaveinsta
-                </li>
-                <li><!--Botao slider-->
-                    <input type="range" min="1" max="2" value="1" id="btnSlider1" class="slider">
-                </li>
-                <li>
-                    <ul><!--Links-->
-                        <li><a href="#">Inscreva-se no NLW</a></li>
-                        <li><a href="#">Baixe meu e-book</a></li>
-                        <li><a href="#">Veja meu portfolio</a></li>
-                        <li><a href="#">Conheça o explorer</a></li>
-                    </ul>
-                </li>
-                <li><!--Icones-->
-                    icones
-                </li>
-                <li>Feito com s2 pela Rocketseat </li>
-            </ul>
-        </div> <!-- fim caixa-->
-    </div><!-- fim main-->
+            <div id="divAvatar">
+                <!--Avatar-->
+                <img src="assets/avatar.png" alt="imagem de avatar" id="imgAvatar" class="roundedBorderPicture">
+                @idonthaveinsta
+            </div>
+            <div id="divBtnSlider">
+                <!--Botao slider-->
+                <!--input type="range" min="1" max="2" value="1" id="btnSlider1" class="slider"-->
+                <input type="checkbox" id="btnSlider1" checked="true">
+            </div>
+            <div id="divLinks">
+                <ul>
+                    <li>
+                        <ul><!--Links-->
+                            <li><a href="#">Inscreva-se no NLW</a></li>
+                            <li><a href="#">Baixe meu e-book</a></li>
+                            <li><a href="#">Veja meu portfolio</a></li>
+                            <li><a href="#">Conheça o explorer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="divIcones">
+                <!--Icones-->
+                icones
+            </div>
+            <div id="divRodape">
+                Feito com s2 pela Rocketseat
+            </div>
+        </div><!-- divBox -->
+    </div><!-- fim main -->
     <script>
        window.addEventListener('load', getTimeAndSetTheBackground); /* altera fundo pelo horario */
-       document.addEventListener('click', ChangeBackground); /* altera fundo pelo clique no slider */
+       document.addEventListener('click', getSliderPosition); /* altera fundo pelo clique no slider */
     </script>
 </body>
 </html>

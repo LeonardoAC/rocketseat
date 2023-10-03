@@ -9,13 +9,23 @@
     /* variáveis */
     --fundoDia: url(assets/bg-desktop-light.jpg);
     --fundoNoite: url(assets/bg-desktop.jpg);
+    --avatarDia: url(assets/avatar-light.png);
+    --avatarNoite: url(assets/avatar.png);
     --corDaBorda: grey;
 }
 
 body{
-    background-image: var(--fundoDia);
+    /*background-image: var(--fundoDia); /*default*/
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.fundoDia{
+    background-image: var(--fundoDia);
+}
+
+.fundoNoite{
+    background-image: var(--fundoNoite);
 }
 
 .divmain{
@@ -33,6 +43,7 @@ body{
     /* Cria moldura arredondada em torno das imagens */
     border-radius: 50%;
     border: 1px solid white;
+    width: 250px;
 }
 
 .slider{
@@ -43,9 +54,3 @@ body{
     height: 25px;
     --webkit-height: 25px;
 }
-
-#imgAvatar{
-    /* define o tamanho do avatar */
-    width: 250px;
-}
-
