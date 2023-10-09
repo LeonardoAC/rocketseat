@@ -2,7 +2,7 @@
     margin:0;
     top:0;
     padding: 0;
-    /*box-sizing: border-box*/
+    box-sizing: border-box;
 }
 
 :root{
@@ -12,6 +12,7 @@
     --avatarDia: url(assets/avatar-light.png);
     --avatarNoite: url(assets/avatar.png);
     --corDaBorda: grey;
+    --corDaFonte: black;
 }
 
 body{
@@ -36,7 +37,29 @@ body{
     /* div define a caixa central onde ficam os elementos principais */
     border: 1px solid var(--corDaBorda);
     width: 33%;
+}
 
+.divAvatar{
+    /* Caixa para adequar o avatar*/
+}
+
+.divBtnSlider{
+    /* Botao slider - troca a cor do tema */
+}
+
+.divLinks li{
+    /* botões dos links */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+    border: 1px solid red;
+}
+
+.divIcones{
+    /* Ícones com links */
 }
 
 .roundedBorderPicture{
@@ -53,4 +76,16 @@ body{
     width: 100px;
     height: 25px;
     --webkit-height: 25px;
+}
+
+a:link{
+    text-decoration: none;
+    border: 1px dotted rgb(0, 195, 255);
+    color: var(--corDaFonte);
+}
+
+a:visited{
+    text-decoration: none;
+    border: 1px dotted rgb(0, 255, 21);
+    color: var(--corDaFonte);
 }

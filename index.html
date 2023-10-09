@@ -10,34 +10,35 @@
 <body>
     <div id="main" class="divMain">
         <div id="box" class="divBox">
-            <div id="divAvatar">
+            <div id="divAvatar" div="divAvatar">
                 <!--Avatar-->
-                <img src="assets/avatar.png" alt="imagem de avatar" id="imgAvatar" class="roundedBorderPicture">
+                <img src="assets/avatar-light.png" alt="imagem de avatar" id="imgAvatar" class="roundedBorderPicture">
                 @idonthaveinsta
             </div>
-            <div id="divBtnSlider">
+            <div id="divBtnSlider" class="divBtnSlider">
                 <!--Botao slider-->
                 <!--input type="range" min="1" max="2" value="1" id="btnSlider1" class="slider"-->
-                <input type="checkbox" id="btnSlider1" checked="true">
+                <input type="checkbox" id="btnSlider1" checked="true" class="slider">
             </div>
-            <div id="divLinks">
-                <ul>
-                    <li>
-                        <ul><!--Links-->
-                            <li><a href="#">Inscreva-se no NLW</a></li>
-                            <li><a href="#">Baixe meu e-book</a></li>
-                            <li><a href="#">Veja meu portfolio</a></li>
-                            <li><a href="#">Conheça o explorer</a></li>
-                        </ul>
-                    </li>
+            <div id="divLinks" class="divLinks">
+                <ul><!--Links-->
+                    <li><a href="#">Inscreva-se no NLW</a></li>
+                    <li><a href="#">Baixe meu e-book</a></li>
+                    <li><a href="#">Veja meu portfolio</a></li>
+                    <li><a href="#">Conheça o explorer</a></li>
                 </ul>
             </div>
-            <div id="divIcones">
+            <div id="divIcones" class="divIcones">
                 <!--Icones-->
-                icones
+                <ul>
+                    <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
             </div>
-            <div id="divRodape">
-                Feito com s2 pela Rocketseat
+            <div id="divRodape" class="divRodape">
+                Feito com <ion-icon name="heart"></ion-icon> pela Rocketseat
             </div>
         </div><!-- divBox -->
     </div><!-- fim main -->
@@ -45,5 +46,8 @@
        window.addEventListener('load', getTimeAndSetTheBackground); /* altera fundo pelo horario */
        document.addEventListener('click', getSliderPosition); /* altera fundo pelo clique no slider */
     </script>
+    <!-- Instalacao Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

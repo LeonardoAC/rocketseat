@@ -23,18 +23,21 @@ function ChangeBackground(argDiaOuNoite){
     /* Troca a imagem de fundo da página, ao deslizar o botao slider */
     let btnSlider = document.getElementById('btnSlider1');
     let body = document.querySelector('body');
+    let picture = document.getElementById('imgAvatar');
     
     if(argDiaOuNoite == 'dia'){
         //console.log('ChangeBackground: argumento dia');
         btnSlider.checked = true;
         body.classList.remove('fundoNoite');
         body.classList.add('fundoDia');
+        picture.src = "assets/avatar-light.png";
         
     }else{
         //console.log('ChangeBackground: argumento noite');
         btnSlider.checked = false;
         body.classList.remove('fundoDia');
         body.classList.add('fundoNoite');
+        picture.src = "assets/avatar.png";
     }
 }
 
