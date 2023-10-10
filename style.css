@@ -11,71 +11,101 @@
     --fundoNoite: url(assets/bg-desktop.jpg);
     --avatarDia: url(assets/avatar-light.png);
     --avatarNoite: url(assets/avatar.png);
-    --corDaBorda: grey;
-    --corDaFonte: black;
+    --corDaBordaDia: black;
+    --corDaBordaNoite: white;
+    --corDaFonteDia: black;
+    --corDaFonteNoite: white;
 }
 
 body{
-    /*background-image: var(--fundoDia); /*default*/
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .fundoDia{
+    /* tela de fundo clara */
     background-image: var(--fundoDia);
 }
 
 .fundoNoite{
+    /* tela de fundo escura */
     background-image: var(--fundoNoite);
 }
 
-.divmain{
+.bordaDia .divBox .roundedBorderPicture{
+    /* borda da caixa box e contorno da foto */
+    border: 2px solid var(--corDaBordaDia);
+}
+
+.bordaNoite .divBox .roundedBorderPicture{
+    /* borda da caixa box e contorno da foto */
+    border: 2px solid var(--corDaBordaNoite);
+}
+
+.divMain{
     /* div principal da janela */
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .divBox{
     /* div define a caixa central onde ficam os elementos principais */
-    border: 1px solid var(--corDaBorda);
-    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px solid var(--corDaBordaDia);*/
+    width: 300px;
 }
 
 .divAvatar{
     /* Caixa para adequar o avatar*/
+    text-align: center;
+    padding: 20px;
 }
 
 .divBtnSlider{
     /* Botao slider - troca a cor do tema */
+    display: flex;
+    justify-content: center;
 }
 
 .divLinks li{
     /* botões dos links */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*flex-direction: column;*/
+    justify-content: center; /* eixo horizontal*/
+    align-items: center; /*eixo vertical*/
     height: 50px;
-    list-style: none;
-    border: 1px solid red;
+    border: 1px solid tomato;
 }
 
-.divIcones{
+.divIcones li{
     /* Ícones com links */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 .roundedBorderPicture{
     /* Cria moldura arredondada em torno das imagens */
     border-radius: 50%;
-    border: 1px solid white;
-    width: 250px;
+    /*border: 2px solid var(--corDaBorda);*/
+    width: 150px;
 }
 
 .slider{
     /* define a aparencia do botao slider */
     appearance: none;
-    border: 1px solid var(--corDaBorda);
+    /*border: 1px solid var(--corDaBorda);*/
     width: 100px;
     height: 25px;
     --webkit-height: 25px;
+}
+
+ul{
+    list-style: none;
 }
 
 a:link{
