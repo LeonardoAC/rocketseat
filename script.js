@@ -19,10 +19,9 @@ function ChangeBackground(argDiaOuNoite){
     }else{
         //console.log('ChangeBackground: argumento noite');
         btnSlider.checked = false;
-        body.classList.remove('fundoDia');
-        body.classList.add('fundoNoite');
+        body.classList.remove('fundoDia', 'bordaDia');
+        body.classList.add('fundoNoite', 'bordaNoite');
         picture.src = "assets/avatar.png";
-        box.style.cssText = "border: 1px solid #ffffff";
     }
 }
 
